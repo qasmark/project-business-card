@@ -1,0 +1,21 @@
+.app-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+  }
+}
